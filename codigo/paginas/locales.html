@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="../imagenes/logo.png">
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="../js/script_local.js"></script>
+    <title>SpaWeb</title>
+</head>
+<body style="background:rgb(87, 205, 235)">
+  <div class="inicio ">
+        <div class="px-3 py-2 bg-dark text-white">
+            <div class="container-fluid">
+                <h1 class="text-center">SpaWeb</h1>
+            </div>
+        </div>
+  </div>
+  <div class="b-example-divider">
+      <br>
+  </div>
+  <div class="barra container-xxl ">
+      <div class="px-3 py-2 bg-dark">
+        <ul class="nav justify-content-center row">
+          <li class="nav-item col-sm text-center">
+            <a class="nav-link " href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item col-sm text-center">
+            <a class="nav-link" href="servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item col-sm text-center">
+            <a class="nav-link" href="locales.html">Locales</a>
+          </li>
+          <li class="nav-item col-sm text-center">
+            <a class="nav-link" href="contacto.html">Contactos</a>
+          </li>
+        </ul>
+      </div>
+  </div>
+  <br>
+  <div class="container-xxl px-3 py-2 bg-dark text-white">
+    <div class="row text-center">
+      <br>
+      <div style="border: 2px solid white" class="col-3 text-center">
+        <br><br><br><br>
+        <div style=" border: 2px solid white;" onclick="aparece1()">
+          <label class="h4">SUR</label>
+        </div>
+        <br><br><br><br>
+        <div style=" border: 2px solid white;" onclick="aparece2()">
+          <label class="h4">CENTRO</label>
+        </div>
+        <br><br><br><br>
+        <div style=" border: 2px solid white;" onclick="aparece3()">
+          <label class="h4">NORTE</label>
+        </div>
+        <br><br><br><br>
+      </div>
+      <div style="border: 2px solid white" class="col-9 text-center">
+        <br>
+        <h2 id="ttl">SpaWeb (Mall del Sur)</h2>
+        <br>
+        <img id="img_local" class="img-thumbnail" src="../imagenes/sur.jpg">
+        <br><br>
+        <h4>Dirección</h4>
+        <br>
+        <h5 id="ads">Av. 25 de Julio y Ernesto Albán (1er piso local #05)</h5>
+        <br>
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15947.220595725923!2d-79.902378!3d-2.226898!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6fcac1d1dfc7%3A0x3a3205a3a7f44ede!2sMall%20del%20Sur%2C%20Guayaquil%20090202%2C%20Ecuador!5e0!3m2!1ses!2sus!4v1640742457584!5m2!1ses!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <br><br><br><br>
+        <h4>Galeria</h4>
+        <br>
+        <div class="container-xxl">
+          <div style="display:grid; grid-template-columns: repeat(3, 1fr);place-items: center;">
+            <div class="flechaL g-col-6 g-col-md-4" onclick="verificarL()">
+              <i style="font-size:50px; border: 3px solid white; display:none;" class="bi bi-chevron-left" onclick="Left()"></i>
+            </div>
+            <div class="g-col-6 g-col-md-4">
+              <img height="300" width="600"  src="../Galeria_01/01.jpg" id="imagen_inicio">
+            </div>
+            <div class="flechaR g-col-6 g-col-md-4" onclick="verificarR()">
+              <i style="font-size:50px; border: 3px solid white;" class="bi bi-chevron-right" onclick="Right()"></i>
+            </div>
+          </div>     
+        </div>
+        <br><br><br>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="container-fluid px-3 py-2 bg-dark text-white">
+    <footer class=" align-items-center py-3 my-4 row">
+      <div class="col-sm text-center">
+        <span class="">© 2021 Josue rea, Computación</span>
+      </div>
+      <ul class="nav col-sm justify-content-center list-unstyled d-flex">
+        <li class="ms-3"><h2 class="bi bi-facebook"></h2></li>
+        <li class="ms-3"><h2 class="bi bi-twitter"></h2></li>
+        <li class="ms-3"><h2 class="bi bi-instagram"></h2></li>
+      </ul>
+    </footer>
+  </div>  
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
