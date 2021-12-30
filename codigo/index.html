@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="imagenes/logo.png">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="js/script_inicio.js"></script>
+    <title>SpaWeb</title>
+</head>
+<body style="background:rgb(87, 205, 235)">
+    <div class="inicio ">
+        <div class="px-3 py-2 bg-dark text-white">
+            <div class="container-fluid">
+                <h1 class="text-center">SpaWeb</h1>
+            </div>
+        </div>
+    </div>
+    <div class="b-example-divider">
+      <br>
+  </div>
+  <div class="barra container-xxl ">
+      <div class="px-3 py-2 bg-dark">
+        <ul class="nav justify-content-center row">
+          <li class="nav-item col-sm text-center">
+            <a class="nav-link " href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item col-sm text-center">
+            <a class="nav-link" href="paginas/servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item col-sm text-center">
+            <a class="nav-link" href="paginas/locales.html">Locales</a>
+          </li>
+          <li class="nav-item col-sm text-center">
+            <a class="nav-link" href="paginas/contacto.html">Contactos</a>
+          </li>
+        </ul>
+      </div>
+  </div>
+  <div class="b-example-divider">
+      <br>
+  </div>
+  <div class="contenido">
+    <div class="container-xxl">
+      <div style="display:grid; grid-template-columns: repeat(3, 1fr);place-items: center;">
+        <div class="flechaL g-col-6 g-col-md-4" >
+          <i style="font-size:50px; border: 3px solid black; display:none;" class="bi bi-chevron-left" onclick="Left()"></i>
+        </div>
+        <div class="g-col-6 g-col-md-4">
+          <img height="600" width="1100"  src="./img_inicio/01.jpg" id="imagen_inicio">
+        </div>
+        <div class="flechaR g-col-6 g-col-md-4">
+          <i style="font-size:50px; border: 3px solid black;" class="bi bi-chevron-right" onclick="Right()"></i>
+        </div>
+      </div>     
+    </div>
+  </div>
+  <div class="b-example-divider">
+    <br>
+  </div>
+  <div class="container-fluid px-3 py-2 bg-dark text-white">
+      <footer class=" align-items-center py-3 my-4 row">
+        <div class="col-sm text-center">
+          <span class="">© 2021 Josue rea, Computación</span>
+        </div>
+        <ul class="nav col-sm justify-content-center list-unstyled d-flex">
+          <li class="ms-3"><h2 class="bi bi-facebook"></h2></li>
+          <li class="ms-3"><h2 class="bi bi-twitter"></h2></li>
+          <li class="ms-3"><h2 class="bi bi-instagram"></h2></li>
+        </ul>
+      </footer>
+  </div>
+    
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
