@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="imagenes/logo.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../imagenes/logo.png">
     <link rel="stylesheet" href="../estilos.css">
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="../js/script_servicio.js"></script>
     <title>SpaWeb</title>
 </head>
 <body style="background:rgb(87, 205, 235)">
@@ -42,7 +43,7 @@
   <div class="container-xxl px-3 py-2 bg-dark text-white">
     <div class="row text-center">
       <div style="border: 2px solid white" class="col-9">
-        <div class="server">
+        <div class="server" >
           <br>
           <div style="border: 2px solid rgb(0, 204, 255); padding-left: 3px;" class="cont">
               <br>
@@ -87,8 +88,11 @@
             <br>
               <img width="300" height="200" src="../imagenes/masajes.jpg">           
             <br><br>
-         </div>
+          </div>
           <br>
+        </div>
+        <div id="servidor">
+          
         </div>
       </div>
       <div style="border: 2px solid white" class="col-3">
@@ -96,7 +100,6 @@
           <br><br>
           <h4>Nuevo Servicio</h4>
           <br>
-          <form action="">
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label">Nombre</label>
               <input type="text" class="form-control" id="exampleFormControlInput1" required>
@@ -106,26 +109,25 @@
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required></textarea>
             </div>
             <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Duración</label>
-              <input type="text" class="form-control" id="exampleFormControlInput1" required>
+              <label for="exampleFormControlInput2" class="form-label">Duración</label>
+              <input type="text" class="form-control" id="exampleFormControlInput2" required>
             </div>
             <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Valor</label>
-              <input type="text" class="form-control" id="exampleFormControlInput1" required>
+              <label for="exampleFormControlInput3" class="form-label">Valor</label>
+              <input type="text" class="form-control" id="exampleFormControlInput3" required>
             </div>
             <label for="validationCustom04" class="form-label">Tipo de Servicio</label>
               <select class="form-select" id="validationCustom04" required>
               <option selected disabled value="">Elegir...</option>
-              <option>Normal</option>
-              <option>Vip</option>
+              <option value="2">Normal</option>
+              <option value="3">Vip</option>
             </select>
             <br>
             <div class="mb-3">
               <label for="formFile" class="form-label">Imagen</label>
               <input class="form-control" type="file" id="formFile" required>
             </div>
-            <button  class="btn btn-info" type="submit">Crear</button>
-          </form>
+            <button  onclick="agregar()" class="btn btn-info" type="submit">Crear</button>
         </div>
         <hr>
         <div class="mb-3">
@@ -167,6 +169,5 @@
       </ul>
     </footer>
   </div>
-  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
