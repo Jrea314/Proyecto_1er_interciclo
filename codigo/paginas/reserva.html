@@ -40,6 +40,24 @@
                 <br><br>
                 <div class="row align-items-start">
                     <div class="col">
+                        <strong>Servicio: </strong>
+                    </div>
+                    <div class="col">
+                        <select class="form-select" id="validationCustom03" required>
+                        <option selected disabled value="">Elegir...</option>
+                        <option value="2">Depilación</option>
+                        <option value="3">Faciales</option>
+                        <option value="4">Masajes</option>
+                        <option value="5">Depilación-Faciales</option>
+                        <option value="6">Depilación-Masajes</option>
+                        <option value="7">Faciales-Masajes</option>
+                        <option value="8">Todos los servicios</option>
+                        </select>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row align-items-start">
+                    <div class="col">
                         <strong>Sucursal: </strong>
                     </div>
                     <div class="col">
@@ -83,26 +101,69 @@
                         <button  onclick="hora()" class="btn btn-info" type="submit">Escoger hora</button>
                     </div>
                 </div>
+                <br><br>
                 <div id="m" style="display:none;" class="row align-items-start">
                     <div class="col">
-                        <input type="time" name="horaarribo" min="09:00" max="13:00" step="600">                    
+                        <input id="hora1" type="time" name="horaarribo" min="09:00" max="13:00" step="600">                    
                     </div>
                 </div>
                 <div id="t" style="display:none;" class="row align-items-start">
                     <div class="col">
-                        <input type="time" name="horaarribo" min="14:00" max="18:00" step="600">                    
+                        <input id="hora2" type="time" name="horaarribo" min="14:00" max="18:00" step="600">                    
                     </div>
                 </div>
                 <div id="n" style="display:none;" class="row align-items-start">
                     <div class="col">
-                        <input type="time" name="horaarribo" min="18:00" max="21:00" step="600">                    
+                        <input id="hora3" type="time" name="horaarribo" min="18:00" max="21:00" step="600">                    
                     </div>
                 </div>
-                <div id="f" style="display:none;" class="row align-items-start">
+                <div id="f"  style="display:none;" class="row align-items-start">
                     <div class="col">
-                        <label>No hay atención</label>
+                        <label id="horaN">No hay atención</label>
                     </div>
                 </div>
+                <br><br>
+                <div class="row align-items-start">
+                    <div class="col">
+                        <button  onclick="pago()" class="btn btn-info" type="submit">Calcular valores</button>
+                    </div>
+                </div>
+                <br><br>
+                <div id="s" style="display:none;" class="row align-items-start">
+                    <div class="col">
+                      <strong>Subtotal: </strong>
+                    </div>
+                    <div class="col">
+                      <label id="subtotal"></label>
+                    </div>
+                </div>
+                <br><br>
+                <div id="i" style="display:none;" class="row align-items-start">
+                    <div class="col">
+                      <strong>Iva: </strong>
+                    </div>
+                    <div class="col">
+                      <label id="iva"></label>
+                    </div>
+                </div>
+                <br><br>
+                <div id="total1" style="display:none;" class="row align-items-start">
+                    <div class="col">
+                      <strong>Total: </strong>
+                    </div>
+                    <div class="col">
+                      <label id="total"></label>
+                    </div>
+                </div>
+                <br><br>
+                <div id="pago" style="display:none;" class="row align-items-start">
+                    <div class="col">
+                        <a href="./servicios.html" class="btn btn-info">Pagar</a>
+                        <label for=""></label>
+                        <a href="./servicios.html" class="btn btn-info">Cancelar</a>
+                    </div>
+                </div>
+                <br><br>
             </div>   
         </div>
         <br><br>
