@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="../imagenes/logo.png">
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="../js/script_sesion.js"></script>
+    <title>SpaWeb</title>
+</head>
+<body style="background:rgb(87, 205, 235)">
+  <div class="inicio ">
+        <div class="px-3 py-2 bg-dark text-white">
+            <div class="container-fluid">
+                <h1 class="text-center">SpaWeb</h1>
+            </div>
+        </div>
+  </div>
+  <div class="b-example-divider">
+      <br>
+  </div>
+  <div class="container-xxl px-3 py-2 bg-dark text-white">
+    <div class="row text-center">
+      <div style="border: 2px solid white" class="col-12">
+        <br><br><br><br><br><br>
+        <h1>Iniciar Sesion</h1>
+        <div class="row justify-content-center " >
+            <div class="col-3 text-center" style="border: 2px solid rgb(0, 204, 255); padding: 15px;">
+                <div class="mb-3">
+                    <label for="exampleFormControlInputa" class="form-label">Cédula</label>
+                    <input type="text" class="form-control text-center" id="exampleFormControlInputa" required>
+                </div>
+                <div class="mb-3">
+                    <label for="inputPassworda" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control text-center" id="inputPassworda" required>
+                </div>
+                <button  onclick="validar()" class="btn btn-info" type="submit">Registrar</button>
+                <br><br>
+                <a href="registrar.html"><label style="color: rgb(87, 205, 235);">No tengo cuenta</label></a>
+                <br><br>
+                <div style="display:none;" id="botonZ">
+                  <a class="btn btn-info" href="reserva.html">Reservar</a>
+                  <a class="btn btn-info" href="servicios.html">Cancelar</a>
+                </div>
+            </div>   
+        </div>
+        <br><br><br><br><br><br>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="container-fluid px-3 py-2 bg-dark text-white">
+    <footer class=" align-items-center py-3 my-4 row">
+      <div class="col-sm text-center">
+        <span class="">© 2021 Josue rea, Computación</span>
+      </div>
+      <ul class="nav col-sm justify-content-center list-unstyled d-flex">
+        <li class="ms-3"><h2 class="bi bi-facebook"></h2></li>
+        <li class="ms-3"><h2 class="bi bi-twitter"></h2></li>
+        <li class="ms-3"><h2 class="bi bi-instagram"></h2></li>
+      </ul>
+    </footer>
+  </div>
+</body>
+</html>

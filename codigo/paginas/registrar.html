@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="../imagenes/logo.png">
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="../js/script_sesion.js"></script>
+    <title>SpaWeb</title>
+</head>
+<body style="background:rgb(87, 205, 235)">
+  <div class="inicio ">
+        <div class="px-3 py-2 bg-dark text-white">
+            <div class="container-fluid">
+                <h1 class="text-center">SpaWeb</h1>
+            </div>
+        </div>
+  </div>
+  <div class="b-example-divider">
+      <br>
+  </div>
+  <div class="container-xxl px-3 py-2 bg-dark text-white">
+    <div class="row text-center">
+        <div style="border: 2px solid white" class="col-12">
+            <h1>Registrarse</h1>
+            <div class="row justify-content-center " >
+                <div class="col-3 " style="border: 2px solid rgb(0, 204, 255); padding: 15px;">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="col-sm-2 col-form-label">Cédula</label>
+                        <input type="text" class="form-control text-center" id="exampleFormControlInput1" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput2" class="col-sm-2 col-form-label">Nombre</label>
+                        <input type="text" class="form-control text-center" id="exampleFormControlInput2" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput3" class="col-sm-2 col-form-label">Apellido</label>
+                        <input type="text" class="form-control text-center" id="exampleFormControlInput3" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput4" class="col-sm-2 col-form-label">Dirección</label>
+                        <input type="text" class="form-control text-center" id="exampleFormControlInput4" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput5" class="col-sm-2 col-form-label">Teléfono</label>
+                        <input type="text" class="form-control text-center" id="exampleFormControlInput5" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput6" class="form-label">Correo Electrónico.</label>
+                        <input type="email" class="form-control text-center" id="exampleFormControlInput6" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputPassword" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control text-center" id="inputPassword" required>
+                    </div>
+                    <button  onclick="registrar()" class="btn btn-info" type="submit">Registrar</button>
+                    <br><br>
+                    <a href="sesion.html"><label style="color: rgb(87, 205, 235);">Ya tengo cuenta</label></a>
+                </div>   
+            </div>
+            <br>    
+          </div>
+    </div>
+  </div>
+  <br>
+  <div class="container-fluid px-3 py-2 bg-dark text-white">
+    <footer class=" align-items-center py-3 my-4 row">
+      <div class="col-sm text-center">
+        <span class="">© 2021 Josue rea, Computación</span>
+      </div>
+      <ul class="nav col-sm justify-content-center list-unstyled d-flex">
+        <li class="ms-3"><h2 class="bi bi-facebook"></h2></li>
+        <li class="ms-3"><h2 class="bi bi-twitter"></h2></li>
+        <li class="ms-3"><h2 class="bi bi-instagram"></h2></li>
+      </ul>
+    </footer>
+  </div>
+</body>
+</html>

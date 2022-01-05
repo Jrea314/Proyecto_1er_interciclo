@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="../imagenes/logo.png">
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="../js/script_reserva.js"></script>
+    <title>SpaWeb</title>
+</head>
+<body style="background:rgb(87, 205, 235)">
+  <div class="inicio ">
+        <div class="px-3 py-2 bg-dark text-white">
+            <div class="container-fluid">
+                <h1 class="text-center">SpaWeb</h1>
+            </div>
+        </div>
+  </div>
+  <div class="b-example-divider">
+      <br>
+  </div>
+  <div class="container-xxl px-3 py-2 bg-dark text-white">
+    <div class="row text-center">
+      <div style="border: 2px solid white" class="col-12">
+        <br><br>
+        <h1>Reservar</h1>
+        <br>
+        <div class="row justify-content-center " >
+            <div class="col-5" style="border: 2px solid rgb(0, 204, 255); padding: 15px;">
+                <div class="row align-items-start">
+                    <div class="col">
+                      <strong>Cliente: </strong>
+                    </div>
+                    <div class="col">
+                      <label id="cliente"></label>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row align-items-start">
+                    <div class="col">
+                        <strong>Sucursal: </strong>
+                    </div>
+                    <div class="col">
+                        <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Elegir...</option>
+                        <option value="2">sur</option>
+                        <option value="3">centro</option>
+                        <option value="4">norte</option>
+                        </select>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row align-items-start">
+                    <div class="col">
+                        <strong>Turno: </strong>
+                    </div>
+                    <div class="col">
+                        <select class="form-select" id="validationCustom05" required>
+                        <option selected disabled value="">Elegir...</option>
+                        <option value="2">mañana</option>
+                        <option value="3">tarde</option>
+                        <option value="4">noche</option>
+                        </select>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row align-items-start">
+                    <div class="col">
+                        <strong>Fecha: </strong>
+                    </div>
+                    <div class="col">
+                      <input type="date" id="date">
+                    </div>
+                </div>
+                <br><br>
+                <div class="row align-items-start">
+                    <div class="col">
+                        <strong>Hora: </strong>
+                    </div>
+                    <div class="col">
+                        <button  onclick="hora()" class="btn btn-info" type="submit">Escoger hora</button>
+                    </div>
+                </div>
+                <div id="m" style="display:none;" class="row align-items-start">
+                    <div class="col">
+                        <input type="time" name="horaarribo" min="09:00" max="13:00" step="600">                    
+                    </div>
+                </div>
+                <div id="t" style="display:none;" class="row align-items-start">
+                    <div class="col">
+                        <input type="time" name="horaarribo" min="14:00" max="18:00" step="600">                    
+                    </div>
+                </div>
+                <div id="n" style="display:none;" class="row align-items-start">
+                    <div class="col">
+                        <input type="time" name="horaarribo" min="18:00" max="21:00" step="600">                    
+                    </div>
+                </div>
+                <div id="f" style="display:none;" class="row align-items-start">
+                    <div class="col">
+                        <label>No hay atención</label>
+                    </div>
+                </div>
+            </div>   
+        </div>
+        <br><br>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="container-fluid px-3 py-2 bg-dark text-white">
+    <footer class=" align-items-center py-3 my-4 row">
+      <div class="col-sm text-center">
+        <span class="">© 2021 Josue rea, Computación</span>
+      </div>
+      <ul class="nav col-sm justify-content-center list-unstyled d-flex">
+        <li class="ms-3"><h2 class="bi bi-facebook"></h2></li>
+        <li class="ms-3"><h2 class="bi bi-twitter"></h2></li>
+        <li class="ms-3"><h2 class="bi bi-instagram"></h2></li>
+      </ul>
+    </footer>
+  </div>
+</body>
+</html>
