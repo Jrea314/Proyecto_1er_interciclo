@@ -1,6 +1,6 @@
 const dias = ['lunes','martes','miércoles','jueves','viernes','sábado','domingo'];
 console.log(localStorage.cedula+" "+localStorage.pass);
-
+console.log(localStorage.nombre+" "+localStorage.apellido);
 function hora() {
     let fecha = document.getElementById('date').value,
         numeroDia = new Date(fecha).getDay(),
@@ -70,12 +70,13 @@ function pago() {
         tipo = document.getElementById('validationCustom05'),
         elegir = tipo.options[tipo.selectedIndex].text,
         hora1 = document.getElementById('hora1').value,
-        h1 = new Date(hora1).getDay(),
         subtotal = document.getElementById('subtotal'),
         iva = document.getElementById('iva'),
         total = document.getElementById('total');
+        localStorage.servicio = ser;
+        localStorage.local = lo;
+        localStorage.turno = elegir;
     console.log(elegir+" "+numeroDia+" "+ser+" "+lo+" "+hora1);
-    let horaN = document.getElementById('horaN').innerHTML;
     if (ser == "Depilación") {
         document.getElementById('s').style.display = "block";
         document.getElementById('i').style.display = "block";
@@ -84,18 +85,62 @@ function pago() {
         subtotal.innerHTML="$20";
         iva.innerHTML="$2.4";
         total.innerHTML="$22.4";
-    }if (servicio == "Faciales") {
-        console.log("adentro"+horaN);
-    }if (servicio == "Masajes") {
-        console.log("adentro"+horaN);
-    }if (servicio == "Depilación-Faciales") {
-        console.log("adentro"+horaN);
-    }if (servicio == "Depilación-Masajes") {
-        console.log("adentro"+horaN);
-    }if (servicio == "Faciales-Masajes") {
-        console.log("adentro"+horaN);
-    }if (servicio == "Todos los servicios") {
-        console.log("adentro"+horaN);
+    }if (ser == "Faciales") {
+        document.getElementById('s').style.display = "block";
+        document.getElementById('i').style.display = "block";
+        document.getElementById('total1').style.display = "block";
+        document.getElementById('pago').style.display = "block";
+        subtotal.innerHTML="$40";
+        iva.innerHTML="$4.8";
+        total.innerHTML="$44.8";
+    }if (ser == "Masajes") {
+        document.getElementById('s').style.display = "block";
+        document.getElementById('i').style.display = "block";
+        document.getElementById('total1').style.display = "block";
+        document.getElementById('pago').style.display = "block";
+        subtotal.innerHTML="$35";
+        iva.innerHTML="$4.2";
+        total.innerHTML="$39.2";
+    }if (ser == "Depilación-Faciales") {
+        document.getElementById('s').style.display = "block";
+        document.getElementById('i').style.display = "block";
+        document.getElementById('total1').style.display = "block";
+        document.getElementById('pago').style.display = "block";
+        subtotal.innerHTML="$60";
+        iva.innerHTML="$7.2";
+        total.innerHTML="$67.2";
+    }if (ser == "Depilación-Masajes") {
+        document.getElementById('s').style.display = "block";
+        document.getElementById('i').style.display = "block";
+        document.getElementById('total1').style.display = "block";
+        document.getElementById('pago').style.display = "block";
+        subtotal.innerHTML="$55";
+        iva.innerHTML="$6.6";
+        total.innerHTML="$61.6";
+    }if (ser == "Faciales-Masajes") {
+        document.getElementById('s').style.display = "block";
+        document.getElementById('i').style.display = "block";
+        document.getElementById('total1').style.display = "block";
+        document.getElementById('pago').style.display = "block";
+        subtotal.innerHTML="$75";
+        iva.innerHTML="$9";
+        total.innerHTML="$84";
+    }if (ser == "Todos los servicios") {
+        document.getElementById('s').style.display = "block";
+        document.getElementById('i').style.display = "block";
+        document.getElementById('total1').style.display = "block";
+        document.getElementById('pago').style.display = "block";
+        subtotal.innerHTML="$95";
+        iva.innerHTML="$11.4";
+        total.innerHTML="$106.4";
     }
 
+}
+
+function final() {
+    alert("Servicio "+localStorage.servicio+" en el local "+localStorage.local+" con turno en la "+localStorage.turno+" reservado");
+}
+
+function cancelar() {
+    alert("Servicio "+localStorage.servicio+" en el local "+localStorage.local+" con turno en la "+localStorage.turno+" cancelado");
 }

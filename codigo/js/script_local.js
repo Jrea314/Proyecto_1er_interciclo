@@ -170,4 +170,3 @@ function regresar3(){
             document.querySelector('.bi-chevron-left').style.display = "none";             
         }
 }
-

@@ -28,16 +28,8 @@
         <h1>Reservar</h1>
         <br>
         <div class="row justify-content-center " >
-            <div class="col-5" style="border: 2px solid rgb(0, 204, 255); padding: 15px;">
-                <div class="row align-items-start">
-                    <div class="col">
-                      <strong>Cliente: </strong>
-                    </div>
-                    <div class="col">
-                      <label id="cliente"></label>
-                    </div>
-                </div>
-                <br><br>
+            <div class="col-5" style=" padding: 15px;">
+                
                 <div class="row align-items-start">
                     <div class="col">
                         <strong>Servicio: </strong>
@@ -158,9 +150,9 @@
                 <br><br>
                 <div id="pago" style="display:none;" class="row align-items-start">
                     <div class="col">
-                        <a href="./servicios.html" class="btn btn-info">Pagar</a>
+                        <a href="./servicios.html" onclick="final()" class="btn btn-info">Pagar</a>
                         <label for=""></label>
-                        <a href="./servicios.html" class="btn btn-info">Cancelar</a>
+                        <a href="./servicios.html" onclick="cancelar()" class="btn btn-info">Cancelar</a>
                     </div>
                 </div>
                 <br><br>

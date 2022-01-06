@@ -16,6 +16,8 @@ function registrar() {
         pass = document.getElementById('inputPassword').value;
         localStorage.cedula = document.getElementById('exampleFormControlInput1').value;
         localStorage.pass = document.getElementById('inputPassword').value;
+        localStorage.nombre = document.getElementById('exampleFormControlInput2').value,
+        localStorage.apellido = document.getElementById('exampleFormControlInput3').value
     c.push(cedula);
     n.push(nombre);
     a.push(apellido);
